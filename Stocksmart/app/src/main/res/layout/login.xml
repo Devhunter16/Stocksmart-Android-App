@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:useDefaultMargins="true"
+        android:background="@color/orange"
+        android:columnCount="5"
+        android:rowCount="6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnSpan="5"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="25dp"
+            android:text="@string/welcome_back"
+            android:textColor="@color/white"
+            android:textSize="46sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnSpan="5"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <EditText
+            android:layout_column="2"
+            android:layout_row="2"
+            android:layout_columnSpan="3"
+            android:id="@+id/loginUsername"
+            android:hint="Username"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_margin="15dp"
+            android:layout_width="250dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <EditText
+            android:layout_column="2"
+            android:layout_row="3"
+            android:layout_columnSpan="3"
+            android:id="@+id/loginPassword"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_margin="15dp"
+            android:layout_width="250dp"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnSpan="5"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:text="@string/submit"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/tan" />
+
+        <Button
+            android:id="@+id/goBackFromLoginButton"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_columnSpan="5"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="0dp"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/tan" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
